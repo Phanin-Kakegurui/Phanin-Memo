@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" contect="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/cal.css"> 
+    </head>
+
+    <body>
+        <video autoplay muted loop id="bg-video">
+            <source src="img/backkground.mp4" type="video/mp4">
+        </video>
+        <p>Calculator</p>
+        <div>
+            <form name="cal">
+                <br/>
+                <input class="console" type="text" name="display">
+                <br><br>
+                <input class="button" type="button" value="9" onclick="cal.display.value+='9'">
+                <input class="button" type="button" value="8" onclick="cal.display.value+='8'">
+                <input class="button" type="button" value="7" onclick="cal.display.value+='7'">
+                <input class="button" type="button" value="+" onclick="cal.display.value+='+'">
+                <br><br>
+                <input class="button" type="button" value="6" onclick="cal.display.value+='6'">
+                <input class="button" type="button" value="5" onclick="cal.display.value+='5'">
+                <input class="button" type="button" value="4" onclick="cal.display.value+='4'">
+                <input class="button" type="button" value="-" onclick="cal.display.value+='-'">
+                <br><br>
+                <input class="button" type="button" value="3" onclick="cal.display.value+='3'">
+                <input class="button" type="button" value="2" onclick="cal.display.value+='2'">
+                <input class="button" type="button" value="1" onclick="cal.display.value+='1'">
+                <input class="button" type="button" value="*" onclick="cal.display.value+='*'">
+                <br><br>
+                <input class="button" type="button" value="0" onclick="cal.display.value+='0'">
+                <input class="button" type="button" value="/" onclick="cal.display.value+='/'">
+                <input class="button" type="button" value="%" onclick="cal.display.value+='%'">
+                <input class="button" type="button" value="=" onclick="cal.display.value= eval(cal.display.value)">
+
+                <br><br>
+                <input class="button" type="button" value="del" onclick="cal.display.value=' '" id=" DEL">
+            </form>
+        </div>
+        <br/>
+    </body>
+</html>
